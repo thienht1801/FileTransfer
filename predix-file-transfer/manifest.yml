@@ -1,0 +1,14 @@
+---
+applications:
+  - name: predix-ec-datasimulator-dev
+    memory: 1G
+    disk_quota: 1G
+    domain: run.aws-usw02-pr.ice.predix.io
+    path: target/predix-ec-datasimulator-1.0.jar
+    env:
+      GATEWAY_URI: https://predix-ec-gateway-dev.run.aws-usw02-pr.ice.predix.io
+      SCHEDULER_TIME: 1000
+      CLIENT_ID: predix_client
+      CLIENT_SECRET: IM_SO_SECRET
+      CLIENT_BASE64_TOKEN: cHJlZGl4X2NsaWVudDpJTV9TT19TRUNSRVQ=
+      UAA_URI: https://8acdb88d-40df-4c41-a89b-1398ee1916a4.predix-uaa.run.aws-usw02-pr.ice.predix.io
